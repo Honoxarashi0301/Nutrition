@@ -72,12 +72,13 @@ namespace Nutrition
 
     private void button1_Click_1(object sender, EventArgs e)
     {
-      MessageBox.Show("hello world");
+      MessageBox.Show("今天我們講中文");
+      MessageBox.Show("大家好");
     }
 
     private void button2_Click(object sender, EventArgs e)
     {
-      MessageBox.Show("gogogo");
+      MessageBox.Show("衝阿");
     }
   }
 }
