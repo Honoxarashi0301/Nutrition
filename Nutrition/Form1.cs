@@ -25,7 +25,7 @@ namespace Nutrition
       string MaterialInput = material.Text;
       string MenuInput = menuBox.Text; 
       double WeightDouble = Convert.ToDouble(WeightInput);
-      double CaroriesDouble = WeightDouble * ;
+      //double CaroriesDouble = WeightDouble * ;
 
       // radio
       string RadioButtonLog = "";
@@ -68,6 +68,11 @@ namespace Nutrition
     private void aBOUTToolStripMenuItem2_Click(object sender, EventArgs e)
     {
       MessageBox.Show("This is about");
+    }
+
+    private void button1_Click_1(object sender, EventArgs e)
+    {
+      MessageBox.Show("hello world");
     }
   }
 }

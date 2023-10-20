@@ -28,9 +28,9 @@
     /// </summary>
     private void InitializeComponent()
     {
-      System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-      System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-      System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+      System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+      System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+      System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
       this.AddButton = new System.Windows.Forms.Button();
       this.DeleteButton = new System.Windows.Forms.Button();
       this.label1 = new System.Windows.Forms.Label();
@@ -39,10 +39,10 @@
       this.label4 = new System.Windows.Forms.Label();
       this.label5 = new System.Windows.Forms.Label();
       this.groupBox1 = new System.Windows.Forms.GroupBox();
+      this.CaloriesRadio = new System.Windows.Forms.RadioButton();
+      this.noneRadio = new System.Windows.Forms.RadioButton();
       this.menuBox = new System.Windows.Forms.TextBox();
       this.mealBox = new System.Windows.Forms.ComboBox();
-      this.noneRadio = new System.Windows.Forms.RadioButton();
-      this.CaloriesRadio = new System.Windows.Forms.RadioButton();
       this.material = new System.Windows.Forms.RichTextBox();
       this.Weight = new System.Windows.Forms.RichTextBox();
       this.output = new System.Windows.Forms.RichTextBox();
@@ -52,29 +52,30 @@
       this.aBOUTToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
       this.tabControl1 = new System.Windows.Forms.TabControl();
       this.tabPage1 = new System.Windows.Forms.TabPage();
-      this.tabPage2 = new System.Windows.Forms.TabPage();
-      this.tabPage3 = new System.Windows.Forms.TabPage();
-      this.tabPage4 = new System.Windows.Forms.TabPage();
-      this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
       this.materialList = new System.Windows.Forms.DataGridView();
       this.meal = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.menu = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.heavy = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Carories = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.tabPage2 = new System.Windows.Forms.TabPage();
+      this.tabPage3 = new System.Windows.Forms.TabPage();
+      this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+      this.tabPage4 = new System.Windows.Forms.TabPage();
+      this.button1 = new System.Windows.Forms.Button();
       this.groupBox1.SuspendLayout();
       this.menuStrip1.SuspendLayout();
       this.tabControl1.SuspendLayout();
       this.tabPage1.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.materialList)).BeginInit();
       this.tabPage3.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.materialList)).BeginInit();
       this.SuspendLayout();
       // 
       // AddButton
       // 
       this.AddButton.Font = new System.Drawing.Font("微軟正黑體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
       this.AddButton.Location = new System.Drawing.Point(17, 678);
-      this.AddButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.AddButton.Margin = new System.Windows.Forms.Padding(4);
       this.AddButton.Name = "AddButton";
       this.AddButton.Size = new System.Drawing.Size(267, 62);
       this.AddButton.TabIndex = 0;
@@ -86,7 +87,7 @@
       // 
       this.DeleteButton.Font = new System.Drawing.Font("微軟正黑體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
       this.DeleteButton.Location = new System.Drawing.Point(292, 678);
-      this.DeleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.DeleteButton.Margin = new System.Windows.Forms.Padding(4);
       this.DeleteButton.Name = "DeleteButton";
       this.DeleteButton.Size = new System.Drawing.Size(267, 62);
       this.DeleteButton.TabIndex = 1;
@@ -161,6 +162,30 @@
       this.groupBox1.TabIndex = 7;
       this.groupBox1.TabStop = false;
       // 
+      // CaloriesRadio
+      // 
+      this.CaloriesRadio.AutoSize = true;
+      this.CaloriesRadio.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+      this.CaloriesRadio.Location = new System.Drawing.Point(144, 22);
+      this.CaloriesRadio.Name = "CaloriesRadio";
+      this.CaloriesRadio.Size = new System.Drawing.Size(99, 26);
+      this.CaloriesRadio.TabIndex = 13;
+      this.CaloriesRadio.TabStop = true;
+      this.CaloriesRadio.Text = "依據熱量";
+      this.CaloriesRadio.UseVisualStyleBackColor = true;
+      // 
+      // noneRadio
+      // 
+      this.noneRadio.AutoSize = true;
+      this.noneRadio.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+      this.noneRadio.Location = new System.Drawing.Point(6, 22);
+      this.noneRadio.Name = "noneRadio";
+      this.noneRadio.Size = new System.Drawing.Size(65, 26);
+      this.noneRadio.TabIndex = 12;
+      this.noneRadio.TabStop = true;
+      this.noneRadio.Text = "預設";
+      this.noneRadio.UseVisualStyleBackColor = true;
+      // 
       // menuBox
       // 
       this.menuBox.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -185,30 +210,6 @@
       this.mealBox.Name = "mealBox";
       this.mealBox.Size = new System.Drawing.Size(121, 33);
       this.mealBox.TabIndex = 10;
-      // 
-      // noneRadio
-      // 
-      this.noneRadio.AutoSize = true;
-      this.noneRadio.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-      this.noneRadio.Location = new System.Drawing.Point(6, 22);
-      this.noneRadio.Name = "noneRadio";
-      this.noneRadio.Size = new System.Drawing.Size(62, 26);
-      this.noneRadio.TabIndex = 12;
-      this.noneRadio.TabStop = true;
-      this.noneRadio.Text = "預設";
-      this.noneRadio.UseVisualStyleBackColor = true;
-      // 
-      // CaloriesRadio
-      // 
-      this.CaloriesRadio.AutoSize = true;
-      this.CaloriesRadio.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-      this.CaloriesRadio.Location = new System.Drawing.Point(144, 22);
-      this.CaloriesRadio.Name = "CaloriesRadio";
-      this.CaloriesRadio.Size = new System.Drawing.Size(96, 26);
-      this.CaloriesRadio.TabIndex = 13;
-      this.CaloriesRadio.TabStop = true;
-      this.CaloriesRadio.Text = "依據熱量";
-      this.CaloriesRadio.UseVisualStyleBackColor = true;
       // 
       // material
       // 
@@ -254,20 +255,20 @@
             this.aBOUTToolStripMenuItem1,
             this.aBOUTToolStripMenuItem2});
       this.rEADToolStripMenuItem.Name = "rEADToolStripMenuItem";
-      this.rEADToolStripMenuItem.Size = new System.Drawing.Size(62, 26);
+      this.rEADToolStripMenuItem.Size = new System.Drawing.Size(62, 23);
       this.rEADToolStripMenuItem.Text = "READ";
       // 
       // aBOUTToolStripMenuItem1
       // 
       this.aBOUTToolStripMenuItem1.Name = "aBOUTToolStripMenuItem1";
-      this.aBOUTToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+      this.aBOUTToolStripMenuItem1.Size = new System.Drawing.Size(153, 26);
       this.aBOUTToolStripMenuItem1.Text = "README";
       this.aBOUTToolStripMenuItem1.Click += new System.EventHandler(this.aBOUTToolStripMenuItem1_Click);
       // 
       // aBOUTToolStripMenuItem2
       // 
       this.aBOUTToolStripMenuItem2.Name = "aBOUTToolStripMenuItem2";
-      this.aBOUTToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+      this.aBOUTToolStripMenuItem2.Size = new System.Drawing.Size(153, 26);
       this.aBOUTToolStripMenuItem2.Text = "ABOUT";
       this.aBOUTToolStripMenuItem2.Click += new System.EventHandler(this.aBOUTToolStripMenuItem2_Click);
       // 
@@ -294,54 +295,6 @@
       this.tabPage1.TabIndex = 0;
       this.tabPage1.Text = "食材列表";
       this.tabPage1.UseVisualStyleBackColor = true;
-      // 
-      // tabPage2
-      // 
-      this.tabPage2.Location = new System.Drawing.Point(4, 28);
-      this.tabPage2.Name = "tabPage2";
-      this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPage2.Size = new System.Drawing.Size(659, 493);
-      this.tabPage2.TabIndex = 1;
-      this.tabPage2.Text = "菜餚列表";
-      this.tabPage2.UseVisualStyleBackColor = true;
-      // 
-      // tabPage3
-      // 
-      this.tabPage3.Controls.Add(this.chart1);
-      this.tabPage3.Location = new System.Drawing.Point(4, 28);
-      this.tabPage3.Name = "tabPage3";
-      this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPage3.Size = new System.Drawing.Size(659, 493);
-      this.tabPage3.TabIndex = 2;
-      this.tabPage3.Text = "統計圖表";
-      this.tabPage3.UseVisualStyleBackColor = true;
-      // 
-      // tabPage4
-      // 
-      this.tabPage4.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-      this.tabPage4.Location = new System.Drawing.Point(4, 28);
-      this.tabPage4.Name = "tabPage4";
-      this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPage4.Size = new System.Drawing.Size(659, 493);
-      this.tabPage4.TabIndex = 3;
-      this.tabPage4.Text = "tabPage4";
-      this.tabPage4.UseVisualStyleBackColor = true;
-      // 
-      // chart1
-      // 
-      chartArea4.Name = "ChartArea1";
-      this.chart1.ChartAreas.Add(chartArea4);
-      legend4.Name = "Legend1";
-      this.chart1.Legends.Add(legend4);
-      this.chart1.Location = new System.Drawing.Point(303, 8);
-      this.chart1.Name = "chart1";
-      series4.ChartArea = "ChartArea1";
-      series4.Legend = "Legend1";
-      series4.Name = "stocks";
-      this.chart1.Series.Add(series4);
-      this.chart1.Size = new System.Drawing.Size(300, 300);
-      this.chart1.TabIndex = 0;
-      this.chart1.Text = "chart1";
       // 
       // materialList
       // 
@@ -385,11 +338,71 @@
       this.Carories.MinimumWidth = 6;
       this.Carories.Name = "Carories";
       // 
+      // tabPage2
+      // 
+      this.tabPage2.Location = new System.Drawing.Point(4, 28);
+      this.tabPage2.Name = "tabPage2";
+      this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+      this.tabPage2.Size = new System.Drawing.Size(659, 493);
+      this.tabPage2.TabIndex = 1;
+      this.tabPage2.Text = "菜餚列表";
+      this.tabPage2.UseVisualStyleBackColor = true;
+      // 
+      // tabPage3
+      // 
+      this.tabPage3.Controls.Add(this.chart1);
+      this.tabPage3.Location = new System.Drawing.Point(4, 28);
+      this.tabPage3.Name = "tabPage3";
+      this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+      this.tabPage3.Size = new System.Drawing.Size(659, 493);
+      this.tabPage3.TabIndex = 2;
+      this.tabPage3.Text = "統計圖表";
+      this.tabPage3.UseVisualStyleBackColor = true;
+      // 
+      // chart1
+      // 
+      chartArea2.Name = "ChartArea1";
+      this.chart1.ChartAreas.Add(chartArea2);
+      legend2.Name = "Legend1";
+      this.chart1.Legends.Add(legend2);
+      this.chart1.Location = new System.Drawing.Point(303, 8);
+      this.chart1.Name = "chart1";
+      series2.ChartArea = "ChartArea1";
+      series2.Legend = "Legend1";
+      series2.Name = "stocks";
+      this.chart1.Series.Add(series2);
+      this.chart1.Size = new System.Drawing.Size(300, 300);
+      this.chart1.TabIndex = 0;
+      this.chart1.Text = "chart1";
+      // 
+      // tabPage4
+      // 
+      this.tabPage4.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+      this.tabPage4.Location = new System.Drawing.Point(4, 28);
+      this.tabPage4.Name = "tabPage4";
+      this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+      this.tabPage4.Size = new System.Drawing.Size(659, 493);
+      this.tabPage4.TabIndex = 3;
+      this.tabPage4.Text = "tabPage4";
+      this.tabPage4.UseVisualStyleBackColor = true;
+      // 
+      // button1
+      // 
+      this.button1.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+      this.button1.Location = new System.Drawing.Point(448, 281);
+      this.button1.Name = "button1";
+      this.button1.Size = new System.Drawing.Size(86, 97);
+      this.button1.TabIndex = 18;
+      this.button1.Text = "請點我";
+      this.button1.UseVisualStyleBackColor = true;
+      this.button1.Click += new System.EventHandler(this.button1_Click_1);
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1262, 753);
+      this.Controls.Add(this.button1);
       this.Controls.Add(this.tabControl1);
       this.Controls.Add(this.output);
       this.Controls.Add(this.Weight);
@@ -406,7 +419,7 @@
       this.Controls.Add(this.AddButton);
       this.Controls.Add(this.menuStrip1);
       this.MainMenuStrip = this.menuStrip1;
-      this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.Margin = new System.Windows.Forms.Padding(4);
       this.Name = "Form1";
       this.Text = "Form1";
       this.groupBox1.ResumeLayout(false);
@@ -415,9 +428,9 @@
       this.menuStrip1.PerformLayout();
       this.tabControl1.ResumeLayout(false);
       this.tabPage1.ResumeLayout(false);
+      ((System.ComponentModel.ISupportInitialize)(this.materialList)).EndInit();
       this.tabPage3.ResumeLayout(false);
       ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.materialList)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -455,6 +468,7 @@
     private System.Windows.Forms.DataGridViewTextBoxColumn menu;
     private System.Windows.Forms.DataGridViewTextBoxColumn heavy;
     private System.Windows.Forms.DataGridViewTextBoxColumn Carories;
+    private System.Windows.Forms.Button button1;
   }
 }
 
