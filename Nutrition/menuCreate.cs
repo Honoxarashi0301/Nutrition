@@ -34,7 +34,6 @@ namespace Nutrition
 
       // 會鎖定這個頁面，開啟下一個頁面
       dishesList.ShowDialog();
-
     }
   }
 }
